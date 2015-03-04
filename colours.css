@@ -1,0 +1,41 @@
+
+/*
+for fixed navbar see BS docs:
+http://getbootstrap.com/components/#navbar-fixed-top
+*/
+body { 
+    padding-top: 70px; 
+    position: relative;
+}
+
+.purple{
+    color: #6A1B9A;
+}
+
+.teal{
+    color: #009688;
+}
+
+.orange{
+    color: #FB8C00;
+}
+
+.light-green{
+    color: #8BC34A;
+}
+
+.red{
+    color: #F44336;
+}
+
+.blue{
+    color: #2196F3;
+}
+
+.blue-grey{
+    color: #607D8B;
+}
+
+.white{
+    color: #ffffff;
+}

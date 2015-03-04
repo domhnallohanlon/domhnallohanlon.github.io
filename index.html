@@ -17,9 +17,14 @@
     <!-- Dropdown.js -->
     <link href="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="colours.css">
+
 </head>
-<body>
-<div class="navbar navbar-default">
+<body data-spy="scroll" data-target="#myLittleEye">
+<div class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="icon-bar"></span>
@@ -42,22 +47,60 @@
 
 <div class="container">
 
-    <div class="jumbotron">
-	<h1>App Inventor
+<div class="col-md-9">
 
+    <div class="jumbotron" id="ai2">
+    <h1>
+        <span class="fa-stack light-green">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-android fa-stack-1x fa-inverse"></i>
+        </span> App Inventor
     </h1>
-	<p>Resources for teaching with MIT App Inventor</p>
-	<div class="btn btn-primary btn-lg disabled"> Coming Soon.</div>
+    <p>Resources for teaching with MIT App Inventor</p>
+    <div class="btn btn-primary btn-lg disabled"> Coming Soon.</div>
     </div> <!-- App Inventor Jumbotron -->
     
-    <div class="jumbotron">
-        <h2>Arduino</h2>
-        <p>A page of Arduino resources</p>
-        <p><a href="#" class="btn btn-lg btn-responsive disabled">Coming Soon</a></p>
+    <div class="jumbotron" id="ard">
+    <h1>
+        <span class="fa-stack teal">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
+        </span> Arduino
+    </h1>
+    <p>A page of Arduino resources</p>
+    <p><a href="#" class="btn btn-lg btn-responsive disabled">Coming Soon</a></p>
+    </div> <!-- ARDUINO JUMBOTRON -->
+
+    <div class="jumbotron" id="tbs">
+    <h1>
+        <span class="fa-stack purple">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
+        </span> Bootstrap
+    </h1>
+    <p>Beautiful, responsive design with Twitter Bootstrap</p>
+    <p><a href="https://getbootstrap.com" class="btn btn-lg btn-primary btn-responsive">Visit Site</a></p>
+
+    </div> <!-- BOOTSTRAP JUMBOTRON -->
+
+    <div class="jumbotron" id="git">
+        <h1>
+            <span class="fa-stack blue-grey">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span> Github
+        </h1>
+        <p>Tutorials for getting started with Git and Github</p>
+        <p><a href="https://guides.github.com/activities/hello-world/" target="_blank" class="btn btn-lg btn-responsive btn-primary"> Read More</a></p>
     </div>
 
-    <div class="jumbotron">
-        <h1>Google Classroom</h1>
+    <div class="jumbotron" id="goog">
+        <h1>
+            <span class="fa-stack red">
+                <i class="fa fa-stack-2x fa-circle"></i>
+                <i class="fa fa-stack-1x fa-users fa-inverse"></i>
+            </span> Google Classroom
+        </h1>
         <p>A simple guide to getting started with Google Classroom</p>
         <p>
             <a href="https://domhnallohanlon.github.io/classroom" class="btn btn-primary btn-lg">
@@ -66,15 +109,37 @@
         </p>
     </div><!-- Google Classroom Jumbotron -->
 
-    <div class="jumbotron">
-        <h2>How to Make an App</h2>
+    <div class="jumbotron" id="htmaa">
+        <h1>
+            <span class="fa-stack blue">
+                <i class="fa fa-stack-2x fa-circle"></i>
+                <i class="fa fa-stack-1x fa-mobile fa-inverse"></i>
+            </span> How to Make an App
+        </h1>
         <p>Resources to accompany the workshops</p>
-        <p><a href="https://domhnallohanlon.github.io/htmaa">Learn More</a></p>
+        <p><a href="https://domhnallohanlon.github.io/htmaa" target="_blank" class="btn btn-lg btn-responsive btn-primary">Learn More</a></p>
     </div> <!-- HTMAA Jumbotron -->
+
+</div> <!-- end col-md-9 -->
+
+<div class="col-md-3" id="myLittleEye">
+    <div class="bs-docs-sidebar">
+    <ul class="nav nav-list bs-docs-sidenav affix">
+        <li><a href="#ai2" class="active">App Inventor</a></li>
+        <li><a href="#ard">Arduino</a></li>
+        <li><a href="#tbs">Bootstrap</a></li>
+        <li><a href="#git">Github</a></li>
+        <li><a href="#goog">Google Classroom</a></li>
+        <li><a href="#htmaa"> How to Make an App</a></li>
+    </ul>
+  </div>
+
+
+</div> <!-- end col-md-3 -->
 
 </div> <!-- container -->
 
-	<!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>	
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>    
 </body>
 </html>
