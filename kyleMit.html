@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KyleMit</title>
+    <!-- Twitter Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design for Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/material-wfont.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.2/css/ripples.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="side_nav.css">
+</head>
+<body>
+    
+<!-- Top Navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> <a class="navbar-brand" href="#">Bootstrap 3.0 Skeleton</a>
+
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a>
+                </li>
+                <li><a href="#about">About</a>
+                </li>
+                <li><a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <!--Main Content -->
+    <div class="col-md-9">
+        <section id="GroupA" class="group">
+            <h3>Group A</h3>
+            <div id="GroupASub1" class="subgroup">
+                <h4>Group A Sub 1</h4>
+            </div>
+            <div id="GroupASub2" class="subgroup">
+                <h4>Group A Sub 2</h4>
+            </div>
+        </section>
+        <section id="GroupB" class="group">
+            <h3>Group B</h3>
+            <div id="GroupBSub1" class="subgroup">
+                <h4>Group B Sub 1</h4>
+            </div>
+            <div id="GroupBSub2" class="subgroup">
+                <h4>Group B Sub 2</h4>
+            </div>
+        </section>
+        <section id="GroupC" class="group">
+            <h3>Group C</h3>
+            <div id="GroupCSub1" class="subgroup">
+                <h4>Group C Sub 1</h4>
+            </div>
+            <div id="GroupCSub2" class="subgroup">
+                <h4>Group C Sub 2</h4>
+            </div>
+        </section>    
+    </div>
+
+<!--Side Nav Bar -->
+    <nav class="col-xs-3 bs-docs-sidebar">
+        <ul id="sidebar" class="nav nav-stacked fixed">
+            <li>
+                <a href="#GroupA">Group A</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupASub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupASub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#GroupB">Group B</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupBSub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#GroupC">Group C</a>
+                <ul class="nav nav-stacked">
+                    <li><a href="#GroupCSub1">Sub-Group 1</a></li>
+                    <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div> <!-- end of container -->
+    
+<!-- some sort of magic -->
+<script>
+    $('body').scrollspy({
+        target: '.bs-docs-sidebar',
+        offset: 40
+    });
+</script>
+
+</body>
+</html>

@@ -21,9 +21,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="colours.css">
+    <link rel="stylesheet" type="text/css" href="side_nav.css">
 
 </head>
-<body data-spy="scroll" data-target="#myLittleEye">
+<body>
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -60,7 +61,7 @@
     <div class="btn btn-primary btn-lg disabled"> Coming Soon.</div>
     </div> <!-- App Inventor Jumbotron -->
     
-    <div class="jumbotron" id="ard">
+    <section class="jumbotron" id="ard">
     <h1>
         <span class="fa-stack teal">
             <i class="fa fa-circle fa-stack-2x"></i>
@@ -69,7 +70,7 @@
     </h1>
     <p>A page of Arduino resources</p>
     <p><a href="#" class="btn btn-lg btn-responsive disabled">Coming Soon</a></p>
-    </div> <!-- ARDUINO JUMBOTRON -->
+    </section> <!-- ARDUINO JUMBOTRON -->
 
     <div class="jumbotron" id="tbs">
     <h1>
@@ -122,24 +123,44 @@
 
 </div> <!-- end col-md-9 -->
 
-<div class="col-md-3" id="myLittleEye">
-    <div class="bs-docs-sidebar">
-    <ul class="nav nav-list bs-docs-sidenav affix">
-        <li><a href="#ai2" class="active">App Inventor</a></li>
-        <li><a href="#ard">Arduino</a></li>
-        <li><a href="#tbs">Bootstrap</a></li>
-        <li><a href="#git">Github</a></li>
-        <li><a href="#goog">Google Classroom</a></li>
-        <li><a href="#htmaa"> How to Make an App</a></li>
+
+<nav class="col-md-3 bs-docs-sidebar">
+    <ul id="sidebar" class="nav nav-stacked fixed">
+        <li>
+            <a href="#ai2">App Inventor</a>
+            <ul class="nav nav-stacked">
+                <li><a href="#GroupASub1">Sub-Group 1</a></li>
+                <li><a href="#GroupASub2">Sub-Group 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#ard">Arduino</a>
+            <ul class="nav nav-stacked">
+                <li><a href="#GroupBSub1">Sub-Group 1</a></li>
+                <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#tbs">Bootstrap</a>
+            <ul class="nav nav-stacked">
+                <li><a href="#GroupCSub1">Sub-Group 1</a></li>
+                <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+            </ul>
+        </li>
     </ul>
-  </div>
-
-
-</div> <!-- end col-md-3 -->
+</nav>
 
 </div> <!-- container -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>    
+
+<!-- some sort of magic -->
+<script>
+    $('body').scrollspy({
+        target: '.bs-docs-sidebar',
+        offset: 40
+    });
+</script>
 </body>
 </html>
