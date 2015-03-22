@@ -18,6 +18,9 @@
       ga('send', 'pageview');
 
     </script>
+
+
+
     <!-- Twitter Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -40,18 +43,22 @@
 </head>
 <body data-spy="scroll" data-target="#myLittleEye">
 <div class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header">
+    <div class="navbar-header navyBG">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="javascript:void(0)">Domhnall's Projects</a>
+        <a class="navbar-brand" href="https://domhnallohanlon.github.io">Domhnall's Projects</a>
     </div>
-    <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <div class="navbar-collapse collapse navbar-responsive-collapse navyBG">
         <ul class="nav navbar-nav">
-            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://twitter.com/domhnallohanlon" target="_blank">
+              <i class="fa fa-twitter"></i>
+              Twitter</a></li>
+            <li><a href="https://ie.linkedin.com/in/domhnallohanlon" target="_blank">
+              <i class="fa fa-linkedin-square"></i>
+              LinkedIn</a></li>
         </ul>
         <form class="navbar-form navbar-left">
             <input type="text" class="form-control col-lg-8" placeholder="Search">
@@ -62,118 +69,171 @@
 
 <div class="container">
 
-<div class="col-md-9">
-
-    <div class="jumbotron" id="ai2">
-    <h1>
-        <span class="fa-stack light-green">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-android fa-stack-1x fa-inverse"></i>
-        </span> App Inventor
-    </h1>
-    <p>Resources for teaching with MIT App Inventor</p>
-    <p><a href="https://domhnallohanlon.github.io/ai2" class="btn btn-primary btn-lg"> Learn More </a></p>
-    </div> <!-- App Inventor Jumbotron -->
-    
-    <div class="jumbotron" id="ard">
-    <h1>
-        <span class="fa-stack teal">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
-        </span> Arduino
-    </h1>
-    <p>A page of Arduino resources</p>
-    <p><a href="https://domhnallohanlon.github.io/arduinonotes" class="btn btn-lg btn-responsive btn-primary">Learn More</a></p>
-    </div> <!-- ARDUINO JUMBOTRON -->
-
-    <div class="jumbotron" id="tbs">
-    <h1>
-        <span class="fa-stack purple">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
-        </span> Bootstrap
-    </h1>
-    <p>Beautiful, responsive design with Twitter Bootstrap</p>
-    <p><a href="https://getbootstrap.com" class="btn btn-lg btn-primary btn-responsive">Visit Site</a></p>
-
-    </div> <!-- BOOTSTRAP JUMBOTRON -->
-
-    <div class="jumbotron" id="git">
-        <h1>
-            <span class="fa-stack blue-grey">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-            </span> Github
-        </h1>
-        <p>Tutorials for getting started with Git and Github</p>
-        <p><a href="https://guides.github.com/activities/hello-world/" class="btn btn-lg btn-responsive btn-primary"> Read More</a></p>
-    </div>
-
-    <div class="jumbotron" id="goog">
-        <h1>
-            <span class="fa-stack red">
-                <i class="fa fa-stack-2x fa-circle"></i>
-                <i class="fa fa-stack-1x fa-users fa-inverse"></i>
-            </span> Google Classroom
-        </h1>
-        <p>A simple guide to getting started with Google Classroom</p>
-        <p>
-            <a href="https://domhnallohanlon.github.io/classroom" class="btn btn-primary btn-lg">
-            Learn more
+  <div class="row">
+    <div class="col-md-4 element">
+      <div class="panel panel-primary">
+        <div class="panel-heading light-greenBG">
+            <h3 class="panel-title">MIT App Inventor</h3>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <a class="pull-left" href="https://domhnallohanlon.github.io/ai2">
+              <h2>
+                <span class="fa-stack light-green">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-android fa-stack-1x fa-inverse"></i>
+                </span>
+              </h2>
             </a>
-        </p>
-    </div><!-- Google Classroom Jumbotron -->
+            <div class="media-body">
+                <h4 class="media-heading">App Inventor Resources</h4>
+                <p>Resources for teaching app design and development with MIT App Inventor</p>
+                <p><a href="https://domhnallohanlon.github.io/ai2" class="btn light-greenBG pull-right "> Learn More </a></p>                
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of col 1: App Inventor -->
 
-    <div class="jumbotron" id="htmaa">
-        <h1>
-            <span class="fa-stack blue">
-                <i class="fa fa-stack-2x fa-circle"></i>
-                <i class="fa fa-stack-1x fa-mobile fa-inverse"></i>
-            </span> How to Make an App
-        </h1>
-        <p>Resources to accompany the workshops</p>
-        <p><a href="https://domhnallohanlon.github.io/appnotes" class="btn btn-lg btn-responsive btn-primary">Learn More</a></p>
-    </div> <!-- HTMAA Jumbotron -->
+    <div class="col-md-4 element">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Introduction to Arduino</h3>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <a class="pull-left" href="https://domhnallohanlon.github.io/arduinonotes">
+              <h2>
+                <span class="fa-stack teal">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
+                </span>
+              </h2>
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Arduino</h4>
+                <p>A page of Arduino resources to help with building circuits and writing Arduino code</p>
+                <p><a href="https://domhnallohanlon.github.io/arduinonotes" class="btn btn-responsive btn-primary pull-right">Learn More</a></p>               
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of col 2: Arduino -->
 
-    <div class="jumbotron" id="maths">
-        <h1>
-            <span class="fa-stack orange">
-                <i class="fa fa-stack-2x fa-circle"></i>
-                <i class="fa fa-stack-1x fa-calculator fa-inverse"></i>
-            </span> Mathematics
-        </h1>
-        <p>Quizzes and Notes. Maybe Typesetting resources in the future - who knows? </p>
-        <p><a href="https://domhnallohanlon.github.io/maths" class="btn btn-lg btn-responsive btn-primary">Learn More</a></p>
-    </div> <!-- HTMAA Jumbotron -->
+    <div class="col-md-4 element">
+      <div class="panel panel-primary">
+        <div class="panel-heading redBG">
+            <h3 class="panel-title">Create new accounts and classes</h3>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <a class="pull-left" href="https://domhnallohanlon.github.io/classroom">
+              <h2>
+                <span class="fa-stack red">
+                    <i class="fa fa-stack-2x fa-circle"></i>
+                    <i class="fa fa-stack-1x fa-users fa-inverse"></i>
+                </span>
+              </h2>
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Google Classroom</h4>
+                <p>A simple guide to getting started with Google Classroom</p>
+                <p>
+                    <a href="https://domhnallohanlon.github.io/classroom" class="btn btn-primary pull-right redBG">
+                    Learn more
+                    </a>
+                </p>              
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of col 1: App Inventor -->
+  </div> <!-- end of row 1 -->
 
-    <div class="jumbotron" id="rpi">
-        <h1>
-            <span class="fa-stack raspberry">
-                <i class="fa fa-stack-2x fa-circle"></i>
-                <i class="fa fa-stack-1x fa-laptop fa-inverse"></i>
-            </span> Raspberry Pi
-        </h1>
-        <p>Build your own low-cost computer</p>
-        <p><a href="https://domhnallohanlon.github.io/rpi" class="btn btn-lg btn-responsive btn-primary">Read On</a></p>
-    </div> <!-- Raspberri Py Jumbotron -->
+  <div class="row">
+    <div class="col-md-4 element">
+      <div class="panel panel-primary">
+        <div class="panel-heading blueBG">
+            <h3 class="panel-title">How to Make an App</h3>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <a class="pull-left" href="https://domhnallohanlon.github.io/appnotes">
+              <h2>
+                <span class="fa-stack blue">
+                    <i class="fa fa-stack-2x fa-circle"></i>
+                    <i class="fa fa-stack-1x fa-mobile fa-inverse"></i>
+                </span>
+              </h2>
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Workshop Resources</h4>
+                <p>Resources to accompany the "How to Make an App" workshops</p>
+                <p><a href="https://domhnallohanlon.github.io/appnotes" class="btn btn-responsive btn-primary pull-right blueBG">Learn More</a></p>       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of col 4: How To Make An App -->
 
-</div> <!-- end col-md-9 -->
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading orangeBG">
+            <h3 class="panel-title">Quizzes and Maybe Typesetting</h3>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <a class="pull-left" href="https://domhnallohanlon.github.io/maths">
+              <h2>
+                <span class="fa-stack orange">
+                    <i class="fa fa-stack-2x fa-circle"></i>
+                    <i class="fa fa-stack-1x fa-calculator fa-inverse"></i>
+                </span>
+              </h2>
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Maths Notes</h4>
+                <p>A collection of Maths quizzes from the #AccessMath table quiz.</p>
+                <p><a href="https://domhnallohanlon.github.io/maths" class="btn btn-responsive btn-primary pull-right orangeBG">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of col 5: Maths -->
 
-<div class="col-md-3" id="myLittleEye">
-    <div class="bs-docs-sidebar">
-    <ul class="nav nav-list bs-docs-sidenav affix">
-        <li><a href="#ai2" class="active">App Inventor</a></li>
-        <li><a href="#ard">Arduino</a></li>
-        <li><a href="#tbs">Bootstrap</a></li>
-        <li><a href="#git">Github</a></li>
-        <li><a href="#goog">Google Classroom</a></li>
-        <li><a href="#htmaa"> How to Make an App</a></li>
-        <li><a href="#maths">Mathematics</a></li>
-        <li><a href="#rpi"> Raspberry Pi</a></li>
-    </ul>
-  </div>
-</div> <!-- end col-md-3 -->
-
+    <div class="col-md-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading raspberryBG">
+            <h3 class="panel-title">A Slice of Raspberry Pi</h3>
+        </div>
+        <div class="panel-body">
+          <div class="media">
+            <a class="pull-left" href="https://domhnallohanlon.github.io/rpi">
+              <h2>
+                <span class="fa-stack raspberry">
+                    <i class="fa fa-stack-2x fa-circle"></i>
+                    <i class="fa fa-stack-1x fa-laptop fa-inverse"></i>
+                </span>
+              </h2>
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Three Easy Recipes</h4>
+                <p>Use your Pi as either a web server, media center or cloud storage.</p>
+                <p>
+                    <a href="https://domhnallohanlon.github.io/rpi" class="btn btn-primary pull-right raspberryBG">
+                    Learn more
+                    </a>
+                </p>              
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of col 6: Raspberry Pi -->
+  </div> <!-- end of row 2 -->
 </div> <!-- container -->
 
 <!-- <footer class="bs-docs-footer">
